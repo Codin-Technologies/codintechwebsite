@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Hero(): JSX.Element {
+export function Hero(): JSX.Element {
   return (
     <section
       aria-label="Hero"
@@ -49,3 +49,5 @@ export default function Hero(): JSX.Element {
     </section>
   );
 }
+
+export default Hero;
