@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Services />
       <Impact />
       <Proof />
       <CoreValuesTimeline />
-      <Services />
       <BornAndRaise />
       <Testimonials />
       <CTA />
@@ -23,3 +23,4 @@ export default function Home() {
     </>
   );
 }
+
