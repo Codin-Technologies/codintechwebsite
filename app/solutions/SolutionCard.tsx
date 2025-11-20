@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 
 interface SolutionItem {
@@ -15,8 +14,8 @@ export default function SolutionCard({ item }: { item: SolutionItem }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <Card
-      className="cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-indigo-600 relative overflow-hidden group"
+    <div
+      className="cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-indigo-600 relative overflow-hidden group rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
@@ -64,6 +63,6 @@ export default function SolutionCard({ item }: { item: SolutionItem }) {
           </div>
         </div>
       )}
-    </Card>
+    </div>
   );
 }
