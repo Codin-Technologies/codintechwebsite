@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { ArrowRight, Play } from "lucide-react";
 
-const Hero = () => {
+export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden pt-16">
       {/* Tech grid background */}
@@ -92,6 +92,6 @@ const Hero = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Hero;

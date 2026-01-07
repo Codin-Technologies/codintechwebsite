@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { ReactNode } from 'react';
+import { ReactNode, MouseEventHandler } from 'react';
 
 interface ButtonProps {
   children: ReactNode;
   href?: string;
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'hero' | 'heroOutline';
   className?: string;
-  onClick?: () => void;
+  onClick?: MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   type?: 'button' | 'submit';
 }
 
@@ -28,13 +28,17 @@ export function Button({
       'bg-white text-black border-2 border-gray-200 hover:border-black hover:shadow-md',
     outline:
       'bg-transparent text-black border-2 border-black hover:bg-black hover:text-white',
+    hero:
+      'bg-black text-white hover:bg-indigo-600 hover:shadow-2xl px-8 py-4 rounded-xl text-lg',
+    heroOutline:
+      'bg-transparent text-black border-2 border-black hover:bg-black hover:text-white px-8 py-4 rounded-xl text-lg',
   };
 
   const styles = `${baseStyles} ${variants[variant]} ${className}`;
 
   if (href) {
     return (
-      <Link href={href} className={styles}>
+      <Link href={href} className={styles} onClick={onClick}>
         {children}
       </Link>
     );

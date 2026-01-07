@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__aaf9ba99._.js")
+R.c("server/chunks/ssr/codintech_codintechwebsite_e18e1f74._.js")
+R.c("server/chunks/ssr/c971b_next_dist_472e57a6._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__f1cdc602._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__9435bb6e._.js")
+R.c("server/chunks/ssr/c971b_next_dist_77722860._.js")
+R.c("server/chunks/ssr/codintech_codintechwebsite_app_a62e06a7._.js")
+R.c("server/chunks/ssr/b17ef_codintechwebsite__next-internal_server_app__global-error_page_actions_a4094999.js")
+R.m(50731)
+module.exports=R.m(50731).exports

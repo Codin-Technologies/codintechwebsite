@@ -1,0 +1,3 @@
+module.exports=[39252,a=>{"use strict";function b({children:a}){return a}a.s(["default",()=>b,"metadata",0,{title:"Contact Us | Codin Technologies",description:"Get in touch with Codin Technologies. Contact our team in Dar es Salaam, Tanzania, to discuss your technology needs and digital transformation goals."}])}];
+
+//# sourceMappingURL=codintech_codintechwebsite_app_contact_layout_tsx_dde3cfd5._.js.map
